@@ -1,0 +1,4 @@
+interface:
+  display_name: "H3 人物动作与节奏"
+  short_description: "为 H3 设计自然动作、对白节奏与镜头衔接，并依据试片修正迟缓或突变"
+  default_prompt: "使用 $h3-motion-directing 设计这段 H3 视频的人物动作和节奏，结合起始姿态、对白与参考素材，输出可执行的分镜及提示词。"
