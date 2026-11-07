@@ -20,7 +20,8 @@ git clone https://github.com/QWQcool/h3-motion-directing.git "$HOME/.codex/skill
 
 - `SKILL.md`：动作和节奏设计、提示词、验片与修正流程。
 - `references/motion-patterns.md`：动作规划和示例提示词。
-- `references/production-cases.md`：本次项目的成功、失败与反馈记录。
+- [《赛后先哄你》](references/production-cases.md) 记录真人风格双人镜中的落座、接触与倾听。
+- [《GPT 修好千问》](references/chibi-continuity.md) 记录 Q 版角色的收步与轻俯、连续尾帧接镜、对白归属，以及已认可表演上的局部修订。
 - `references/production-checks.md`：生成、声音、补帧和交付检查。
 - `references/sources.md`：官方和社区资料来源。
 
