@@ -15,6 +15,7 @@ description: "Direct natural character motion, acting beats, dialogue pacing, an
 - 需要起草动作、分配时间或修复节奏时，读 [动作规划与提示词示例](references/motion-patterns.md)。
 - 遇到落座僵硬、动作悬停、参考帧振荡或切镜问题时，读 [制作案例](references/production-cases.md)。案例已写出事实，不依赖原项目仍然存在。
 - 遇到走路突然变成俯身、双人对白串口型、跨镜亮度变化，或要只修已认可镜头中的道具和特效时，读 [《GPT 修好千问》连续对白案例](references/chibi-continuity.md)。
+- 遇到同镜动作像被剪断、单末帧续写先停再动、运镜造成背景变形，或要从成功参考片学习连续表演时，读 [连续镜头与运动上下文](references/continuous-shots.md)。
 - 开始实际生成、声音处理或交付时，读 [生成与交付检查](references/production-checks.md)。
 - 判断某条经验来自官方、社区还是本地试片时，读 [来源与适用边界](references/sources.md)。
 
@@ -55,6 +56,8 @@ description: "Direct natural character motion, acting beats, dialogue pacing, an
 - 起始距离、体型、支撑物和风格改变后重新估时。案例中的秒数只作为同条件起点。
 
 ## 选择引导方式和剪辑
+
+先规划观众要看到的完整镜头，再划分生成任务；不要按台词句数自动拆任务。能在一次生成中容纳的连续身体路径和来回对白，先作为完整表演段处理。换机位的硬切与同镜延长分别规划：单张末帧能提供姿态，不能直接提供此前的运动方向和速度。连续尾部视频引导的接线、帧长和重叠裁切见 [连续镜头与运动上下文](references/continuous-shots.md)。
 
 - **I2VA**：适合从可信首帧发展、允许落点有合理自由度的动作。本项目自然落座的选用版本采用此方式；这不是所有身体动作的固定选择。
 - **FL2VA**：末姿态必须承接下一镜时有用。检查两端的空间、接触关系和摄影机位置是否相容。动作需提前完成时，明确后续表演；必要时再考虑兼容的中间参考。
