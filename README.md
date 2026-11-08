@@ -2,7 +2,7 @@
 
 这是一个用于 MiniMax H3 的 Codex Skill，帮助设计人物动作、对白节奏、参考帧与镜头衔接，并根据试片修正动作迟缓、僵硬、过快或不连贯的问题。
 
-技能入口是 [SKILL.md](SKILL.md)，详细材料在 [references](references/) 中。已验证的项目案例、用户反馈和有待验证的建议分别标注；案例中的时长不能直接推广到所有动作。
+技能入口是 [SKILL.md](SKILL.md)，详细材料在 [references](references/) 中。内容为通用制作决策、技术边界和说明性示例，不依赖某个影片、人物或作者电脑上的项目文件。
 
 ## 使用
 
@@ -20,11 +20,13 @@ git clone https://github.com/QWQcool/h3-motion-directing.git "$HOME/.codex/skill
 
 - `SKILL.md`：动作和节奏设计、提示词、验片与修正流程。
 - `references/motion-patterns.md`：动作规划和示例提示词。
-- [《赛后先哄你》](references/production-cases.md) 记录真人风格双人镜中的落座、接触与倾听。
-- [《GPT 修好千问》](references/chibi-continuity.md) 记录 Q 版角色的收步与轻俯、连续尾帧接镜、对白归属，以及已认可表演上的局部修订。
+- [表演问题诊断](references/acting-diagnostics.md)：落座、接触、动作过快或过慢的判断。
+- [对白与动作连续性](references/dialogue-continuity.md)：身体支撑、口型归属、音画时间线和局部修订。
+- [连续镜头与运动上下文](references/continuous-shots.md)：完整镜头、分任务延长、换机位及视频前缀。
+- [提示词的动作负担](references/prompt-design.md)：动作约束、对白重叠和提示词审查。
 - `references/production-checks.md`：生成、声音、补帧和交付检查。
 - `references/sources.md`：官方和社区资料来源。
 
-制作案例中的部分证据链接指向原项目在创建者电脑上的文件，仅在那台电脑上可用；案例摘要本身保存在仓库中。仓库不包含原项目的视频、图片或服务器凭据。
+说明性示例不保证特定效果；动作时长和工作流参数按当前素材与部署核实。仓库不保存影片素材、项目验收记录或服务器凭据。
 
 本仓库是技能文件的版本备份。本地更改需要通过 Git 提交并推送，才会同步到 GitHub。

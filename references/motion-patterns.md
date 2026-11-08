@@ -1,6 +1,6 @@
 # 动作规划与提示词示例
 
-这些是写法与本地经验的起点。凡未标为已有制作记录的例子，均为新编排，尚未经 H3 渲染验证。示例中的人物、服装和秒数应按当前素材替换。
+以下为可调整的写法示例，不是效果保证；具体文本未经当前素材渲染验证。人物、服装、动作距离、对白和秒数按任务替换，不依赖任何项目记录。
 
 ## 轻量镜头卡
 
@@ -20,11 +20,11 @@
 
 动作时长不需要填满整镜。选择能容纳表演的生成时长；多出的尾部可作为剪辑余量，不必要求演员一直缓慢移动。
 
-## 自然落座：来自选用版本的路径
+## 自然落座：从身体路径安排时间
 
-适用起点：人已经站在空坐垫前，脚有支撑，不需要跨越距离或绕行。原项目给出约 1.6–2 秒动作窗，验片记录约 1.8 秒坐稳。不是所有落座的推荐秒数。
+示例起点：人已经站在空坐垫前，脚有支撑，不需要跨越距离或绕行。下面试用约 1.6–2 秒动作窗；换起点、情绪或座位高度时重新估计，不把它当作推荐常数。
 
-原版还含双人牵手与两句对白。下面为泛化后的 I2VA 示例，按约 6.6 秒镜头编排；新文本未重新渲染：
+下面为 I2VA 写法示例，按约 6.6 秒镜头编排，包含牵手和两句对白；用于说明路径，不要求其他任务沿用这套先后顺序。若情绪和台词允许，说话可以与落座重叠：
 
 ```text
 For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
@@ -40,7 +40,7 @@ non_diegetic_music: N/A
 
 ## 抚脸：把轻接触与抬手速度分开
 
-原项目 B06 从 0.8 秒到 1.5 秒安排抬手接触，之后接男方台词；在 1.5 秒设置一张兼容的接触引导图。验片记录确认动作可用，但未逐帧量化实际接触时刻。
+先判断手离脸的距离、是否经过遮挡以及眼镜位置，再给抬手和接触分配时间。只有确实需要约束接触位置时，才增加与动作路径相容的引导图。
 
 用于动作段落的改写示例：
 
@@ -48,7 +48,7 @@ non_diegetic_music: N/A
 As she finishes her question, he raises his right hand in one continuous movement and reaches her outer cheek over about 0.7 seconds. His fingertips make light contact below the eyeglass frame, then relax against the cheek. The approach is at ordinary human speed; the contact is gentle. He gives his reply while she listens, her gaze softening toward him.
 ```
 
-这里约 0.7 秒来自相近手部距离的项目编排。首帧若手已在脸旁、远离身体或被遮挡，重新判断路径。不要把到达尾帧的时刻自动当作整个抬手动作的结束时刻。
+这里约 0.7 秒仅是示例时间。首帧若手已在脸旁、远离身体或被遮挡，重新判断路径。不要把到达尾帧的时刻自动当作整个抬手动作的结束时刻。
 
 ## 近景倾听：用具体回应承担停顿
 
@@ -72,7 +72,7 @@ The woman remains seated in close-up while the man speaks from off camera to her
 
 核实 Ref2VA 支持后，按官方格式分别写清人物外观、动作参考、环境、摄影机和声音来源。需要保留参考节奏时，不再写另一套相冲突的动作顺序或任意加速时间窗。将“参考动作，重新设计节奏”与“保留动作和时间结构”说明白。
 
-本项目没有完成 Ref2VA 动作迁移验证，不能把它描述为已经解决全部动作问题。
+动作迁移的能力声明与当前素材上的验证分别记录，不能因节点支持参考视频就声称已解决全部动作问题。
 
 ## 常见反馈的修改方向
 
